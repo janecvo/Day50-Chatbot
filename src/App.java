@@ -38,11 +38,11 @@ public class App {
    // Guessing the user's age
         public static void guessAge(){
             System.out.println("Let's guess your age! I hope you like math. ");
-            System.out.println("Pick a number between 1-10.");
+            System.out.println("Pick a number between 1-9.");
                 while (true){
                     int num = Integer.valueOf(scanner.nextLine());
-                    if (num >11){
-                        System.out.println("Your number is greater than 10. Please pick a number between 1-10.");
+                    if (num >=11){
+                        System.out.println("Your number is greater than 9. Please pick a number between 1-9.");
                     }else
                         {System.out.println("Next, take your  "+  num + " and multiply it by 2.\n Add 5 and then mulitply total by 50 \n I have a question for you. Did your birthday already pass this year?");
                         String birthday = scanner.nextLine();
@@ -91,79 +91,9 @@ public class App {
                 }
             }
         }
-    }
+    
 
     public static void farewellUser(){  
         System.out.println("It's been fun! Let's do it again soon! Ta-ta for now!");
     }
-
-//tell a story about user
-
-
-
-//     public static void guessAge(){
-//         System.out.println("Now let me guess your age by asking you some questions!");
-//         System.out.println("First question: were you born BEFORE or AFTER 2000?");
-//         String answerOne = scanner.nextLine();
-
-//         if (answerOne.equalsIgnoreCase("before") ){
-//             System.out.println("You are older than me! I am not sure if I can count that high but I'll try!?");
-
-//             System.out.println("Who was the US president when you were in high school: Carter, Reagan, H.W. Bush, Clinton, W. Bush, Obama?");
-//             String president = scanner.nextLine();
-
-//             switch (president.toLowerCase()){
-//                     case "carter":
-//                     System.out.println("You are between 56-60 years old.");
-//                     break;
-
-//                     case "reagan":
-//                     System.out.println("You are between 48-56 years old.");
-//                     break;
-
-//                     case "h. w. bush":
-//                     System.out.println("You are between 44-48 years old.");
-//                     break;
-
-//                     case "clinton":
-//                     System.out.println("You are between 36-44 years old.");
-//                     break;
-
-//                     case "w. bush":
-//                     System.out.println("You are between 28-36 years old.");
-//                     break;
-
-//                     case "obama":
-//                     System.out.println("You are between 22-28 years old.");
-//                     break;
-
-//                     default:
-//                     System.out.println("Does not compute. beep bop bop boop!");
-//                 }
-//         }else{
-//             System.out.println("You're a young'un like me! This may be easier than I thought! *happy dance*");
-
-//             System.out.println("Have you graduate from high school?");
-//             // String answer = scanner.nextLine();
-
-//             while (true){
-//                 String answer = scanner.nextLine().toLowerCase();
-
-//                 if (answer.equals("yes")){
-//                     System.out.println("You are between 18 - 22 years old.");
-//                 break;
-
-//                 }else  if (answer.equals("no")){
-//                     System.out.println("You ARE a young'un!  Why are you chatting with a bot??!?!");
-//                     break;
-
-//                 }else{
-//                     System.out.println("Sorry, I didn't understand what you wrote. Please answer yes or no.");
-//                 }
-//             }
-//         }
-//     }
-// }
-
-
-
+}
